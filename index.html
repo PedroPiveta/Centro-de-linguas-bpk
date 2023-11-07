@@ -1,307 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
 
     <title>Centro de Línguas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="box-img-header">
-            <a class="logo" href="#">
-                <img src="./assets/img/logos/centro_de_linguas.svg" alt="logo">
-            </a>
-        </div>
+      <div class="box-img-header">
+        <a class="logo" href="#"
+          ><img src="./assets/img/logos/centro_de_linguas.svg" alt="logo"
+        /></a>
+      </div>
 
-        <nav>
-            <a href="#redes" class="nav-links">Redes</a>
-            <a href="#professores" class="nav-links">Professores</a>
-            <a href="#avaliacoes" class="nav-links">Avaliações</a>
-            <a href="#faq" class="nav-links">FAQ</a>
-        </nav>
+      <nav>
+        <a href="#redes" class="nav-links">Redes</a>
+        <a href="#professores" class="nav-links">Professores</a>
+        <a href="#avaliacoes" class="nav-links">Avaliações</a>
+        <a href="#faq" class="nav-links">FAQ</a>
+      </nav>
     </header>
 
     <button id="btnToTop" title="Go to top">▲</button>
 
     <main>
 
-        <!-- Primeira página lado esquerdo (Introdução e cadastro) -->
+      <!-- Primeira página lado esquerdo (Introdução e cadastro) -->
 
-        <section class="first-section">
-            <div class="left-content">
-                <h2 class="titulo-inicio">
-                    Aprenda novos <strong>idiomas</strong> e <br>
-                    desbloqueie o <strong> mundo</strong>.
-                </h2>
+      <section class="first-section">
+        <div class="left-content">
+          <h2 class="titulo-inicio">
+            Aprenda novos <strong>idiomas</strong> e <br />
+            desbloqueie o <strong> mundo</strong>.
+          </h2>
 
-                <p class="first-paragraph">
-                    Desperte seu potencial no <strong>Centro de Línguas</strong> <br>
-                    expandindo horizonte e conectando culturas!
-                </p>
+          <p class="first-paragraph">
+            Desperte seu potencial no <strong>Centro de Línguas</strong> <br />
+            expandindo horizonte e conectando culturas!
+          </p>
 
-                <form action="subscribe">
-                    <input type="text" placeholder="Nome completo">
-                    <input type="email" placeholder="E-mail">
-                    <select name="cursos" id="cursos">
-                        <option value="selecione">Escolha um Curso</option>
-                        <option value="ingles">Inglês</option>
-                        <option value="portugues">Português</option>
-                        <option value="espanhol">Espanhol</option>
-                        <option value="frances">Francês</option>
-                    </select>
+          <form action="subscribe">
+            <input type="text" placeholder="Nome completo" />
+            <input type="email" placeholder="E-mail" />
+            <select name="cursos" id="cursos">
+              <option value="selecione">Escolha um Curso</option>
+              <option value="ingles">Inglês</option>
+              <option value="portugues">Português</option>
+              <option value="espanhol">Espanhol</option>
+              <option value="frances">Francês</option>
+            </select>
 
-                    <input type="submit" value="ENVIAR">
+            <input type="submit" value="ENVIAR" />
+          </form>
+        </div>
+      </section>
 
-                </form>
-            </div>
-        </section>
+      <!-- Primeira pagina lado direito (card) -->
 
-
-        <!-- Primeira pagina lado direito (card) -->
-
-        <section class="right-section">
-            <div class="slide-content">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="./assets/img/logos/centro_de_linguas_short.png" alt="idioma" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">Cursos Disponíveis</h2>
-                            <p class="description">
-                                •Inglês <br>
-                                •Espanhol <br>
-                                •Francês <br>
-                                •Português
-                            </p>
-                            <form action="https://escolas.domusbrasilis.com.br">
-                                <button class="button-slide">
-                                    Adquirir Materiais
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+      <section class="right-section">
+        <div class="slide-content">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="./assets/img/logos/centro_de_linguas_short.png"
+                    alt="idioma"
+                    class="card-img"
+                  />
                 </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Cursos Disponíveis</h2>
+                <p class="description">
+                  •Inglês <br />
+                  •Espanhol <br />
+                  •Francês <br />
+                  •Português
+                </p>
+                <form action="https://escolas.domusbrasilis.com.br">
+                  <button class="button-slide">Adquirir Materiais</button>
+                </form>
+              </div>
             </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Começo segunda pagina (Redes) -->
 
     <section id="redes" class="redes">
+      <div class="redes-text">
+        <h2 class="titulo-redes">
+          Nos acompanhe nas redes sociais e fique por dentro das novidades
+        </h2>
+        <h3 class="descricao-redes">Eventos, dicas, informações e muito +++</h3>
+      </div>
 
-        <div class="redes-text">
-            <h2 class="titulo-redes">Nos acompanhe nas redes sociais e fique por dentro das novidades</h2>
-            <h3 class="descricao-redes">Eventos, dicas, informações e muito +++</h3>
-        </div>
-
-        <div class="redes-img">
-            <!-- <img src="./assets/img/news/006.png" alt="St.Patrick">
-            <img src="./assets/img/news/005.png" alt="InicioAulas">
-            <img src="./assets/img/news/004.png" alt="Dica1">
-            <img src="./assets/img/news/003.png" alt="Nivelamento">
-            <img src="./assets/img/news/002.png" alt="Matriculas">
-            <img src="./assets/img/news/001.png" alt="DeMenor"> -->
-        </div>
-
+      <div class="redes-img"></div>
     </section>
 
     <!-- Começo terceira página (metodologia)-->
 
     <section class="metodologia" id="metodologia">
-        <div class="wrapper-metodologia">
-            <main>
-                <div class="main__text">
-                    <h1>Metodologia</h1>
-                    <div class="main__text-metodologia">
-                        <div>
-                            <p>
-                                Nossa proposta <span>inovadora</span>
-                                oferece aos alunos acesso a tecnologias que <span>impulsionam</span> e
-                                <span>fortalecem</span> o aprendizado.
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                Combinando essas práticas com desafios reais alinhados ao mercado de trabalho,
-                                preparamos estudantes para atuarem de forma técnica como gestores ou empreendedores.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="wrapper-metodologia">
+        <main>
+          <div class="main__text">
+            <h1>Metodologia</h1>
+            <div class="main__text-metodologia">
+              <div>
+                <p>
+                  Nossa proposta <span>inovadora</span> oferece aos alunos
+                  acesso a tecnologias que <span>impulsionam</span> e
+                  <span>fortalecem</span> o aprendizado.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Combinando essas práticas com desafios reais alinhados ao
+                  mercado de trabalho, preparamos estudantes para atuarem de
+                  forma técnica como gestores ou empreendedores.
+                </p>
+              </div>
+            </div>
+          </div>
 
-                <div class="main__img">
-                    <p class="genero-coordenador"></p>
-                    <p class="subtitle">Centro de línguas</p>
+          <div class="main__img">
+            <p class="genero-coordenador"></p>
+            <p class="subtitle">Centro de línguas</p>
 
-                    <img src="" />
-                    <p class="name"></p>
-                    <img class="img-coordenador"/>
-                    <p class="name-coordenador"></p>
-                    <img class="biopark-logo" src="./assets/img/logos/biopark.png" />
-                </div>
-            </main>
-        </div>
+            <img src="" />
+            <p class="name"></p>
+            <img class="img-coordenador" />
+            <p class="name-coordenador"></p>
+            <img class="biopark-logo" src="./assets/img/logos/biopark.png" />
+          </div>
+        </main>
+      </div>
     </section>
 
     <!-- Começo quarta página (Professores) -->
 
     <section id="professores" class="fourth-section">
+      <div class="wrapper-professores">
+        <h2 class="titulo-prof">Conheça nossa equipe de Professores</h2>
 
-        <div class="wrapper-professores">
-            <h2 class="titulo-prof">Conheça nossa equipe de Professores</h2>
-
-            <div class="caixas">
-
-                <!-- <div class="box">
-                    <img class="img-profile" src="./assets/img/perfil.jpg" alt="professora portugues">
-                    <div class="nome-professor">Taina Grespan Pensin</div>
-                    <div class="materia-professor">Professora de Português</div>
-                </div>
-
-
-
-                <div class="box">
-                <img class="img-profile" src="./assets/img/perfil.jpg" alt="professor frances">
-                <div class="box2">
-                    <img class="img-profile" src="./assets/img/perfil.jpg" alt="professor frances">
-                    <div class="nome-professor">Ilo Ba</div>
-                    <div class="materia-professor">Professor de Francês</div>
-                </div>
-
-                <div class="box">
-                    <img class="img-profile" src="./assets/img/perfil.jpg" alt="professora ingles">
-                    <div class="nome-professor">Josiane Hammes</div>
-                    <div class="materia-professor">Professora de Inglês</div>
-                </div>
-
-                <div class="box">
-                    <img class="img-profile" src="./assets/img/perfil.jpg" alt="professora espanhol">
-                    <div class="nome-professor">Talita Mariele Bortolini</div>
-                    <div class="materia-professor">Professora de Espanhol</div>
-                </div> -->
-
-            </div>
-        </div>
+        <div class="caixas"></div>
+      </div>
     </section>
 
     <!-- Começo quinta página (avaliações) -->
 
     <section id="avaliacoes" class="fifth-section">
-        <div class="testimonial-heading">
-            <h1 class="avaliacoes-titulo">Descubra como nossos alunos <br>
-                &nbsp;&nbsp;avaliam o <strong>centro de linguas</strong> </h1>
-        </div>
+      <div class="testimonial-heading">
+        <h1 class="avaliacoes-titulo">
+          Descubra como nossos alunos <br />
+          &nbsp;&nbsp;avaliam o <strong>centro de linguas</strong>
+        </h1>
+      </div>
 
+      <!--testimonials-box-container------>
 
-            
-            <!--testimonials-box-container------>
-            <div class="testimonial-box-container"></div>
-
+      <div class="testimonial-box-container"></div>
     </section>
 
     <!-- Começo sexta página (FAQ) -->
 
     <section id="faq" class="sixth-section">
+      <h2 class="titulo-faq">Perguntas Frequentes</h2>
 
-        <h2 class="titulo-faq">
-            Perguntas Frequentes
-        </h2>
-
-
-        <div class="layout">
-         
-
+      <div class="layout"></div>
     </section>
 
     <!-- Inicio footer -->
 
     <footer>
-        <div class="footer-content" id="footer-content">
-            <div class="container-footer">
-                <div class="linha-footer">
+      <div class="footer-content" id="footer-content">
+        <div class="container-footer">
+          <div class="linha-footer">
+            
+            <!-- Primeira coluna -->
 
-                    <!-- Primeira coluna -->
-
-                    <div class="footer-col">
-                        <h4>Sobre</h4>
-                        <ul>
-                            <li><a href="#metodologia">Quem somos?</a></li>
-                            <li><a href="#">Localização</a></li>
-                            <li><a href="#FAQ">FAQ</a></li>
-                            <li><a href="#">Contatos</a></li>
-                            <li><a href="#">Termos de privacidade</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Segunda coluna -->
-
-                    <div class="footer-col">
-                        <h4>Educação</h4>
-                        <ul>
-                            <li><a href="#professores">Professores</a></li>
-                            <li><a href="#metodologia">Metodologia</a></li>
-                            <li><a href="#">Horários</a></li>
-                            <li><a href="#redes">Eventos</a></li>
-                            <li><a href="#">Calendários</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Terceira coluna -->
-
-                    <div class="footer-col">
-                        <h4>Cursos</h4>
-                        <ul>
-                            <li><a href="#">Espanhol</a></li>
-                            <li><a href="#">Inglês</a></li>
-                            <li><a href="#">Francês</a></li>
-                            <li><a href="#">Português</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Quarta coluna -->
-
-                    <div class="footer-col">
-                        <h4>Administração</h4>
-                        <ul>
-                            <li><a href="#">Rodovia estadual, PR-182</a></li>
-                            <li><a href="#">TOLEDO | PARANÁ | BRASIL</a></li>
-                            <li><a href="#">+55 (45)2036-3601</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Contato -->
-
-                    <div class="footer-col">
-                        <h4>Contato</h4>
-                        <ul>
-                            <li><a href="https://www.instagram.com/centrodelinguasbpk/">Instagram</a></li>
-                            <li><a href="https://biopark.com.br">Biopark</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+            <div class="footer-col">
+              <h4>Sobre</h4>
+              <ul>
+                <li><a href="#metodologia">Quem somos?</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Termos de privacidade</a></li>
+              </ul>
             </div>
+
+            <!-- Segunda coluna -->
+
+            <div class="footer-col">
+              <h4>Educação</h4>
+              <ul>
+                <li><a href="#professores">Professores</a></li>
+                <li><a href="#metodologia">Metodologia</a></li>
+                <li><a href="#">Horários</a></li>
+                <li><a href="#redes">Eventos</a></li>
+                <li><a href="#">Calendários</a></li>
+              </ul>
+            </div>
+
+            <!-- Terceira coluna -->
+
+            <div class="footer-col">
+              <h4>Cursos</h4>
+              <ul>
+                <li><a href="#">Espanhol</a></li>
+                <li><a href="#">Inglês</a></li>
+                <li><a href="#">Francês</a></li>
+                <li><a href="#">Português</a></li>
+              </ul>
+            </div>
+
+            <!-- Quarta coluna -->
+
+            <div class="footer-col">
+              <h4>Administração</h4>
+              <ul>
+                <li><a href="#">Rodovia estadual, PR-182</a></li>
+                <li><a href="#">TOLEDO | PARANÁ | BRASIL</a></li>
+                <li><a href="#">+55 (45)2036-3601</a></li>
+              </ul>
+            </div>
+
+            <!-- Contato -->
+
+            <div class="footer-col">
+              <h4>Contato</h4>
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/centrodelinguasbpk/"
+                    >Instagram</a
+                  >
+                </li>
+                <li><a href="https://biopark.com.br">Biopark</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <div class="conteudo"></div>
@@ -313,6 +280,5 @@
     <script src="./src/depoimentos.js"></script>
     <script src="./src/questionsFAQ.js"></script>
     <script src="./src/accordionEvent.js"></script>
-</body>
-
+  </body>
 </html>
